@@ -1,0 +1,50 @@
+.header {
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  &__logo-col {
+
+  }
+
+  &__nav-col {
+
+  }
+
+  &__panel-col {
+
+  }
+}
+
+.header-nav {
+
+}
+
+.navbar-header {
+  display: none;
+}
+
+.close-nav-list {
+  display: none;
+}
+
+.nav-list {
+  display: flex;
+
+  &__item {
+    list-style: none;
+    padding: 0 9px;
+  }
+
+  &__link {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1;
+    text-transform: lowercase;
+  }
+}
