@@ -3,11 +3,8 @@
 @import "fonts";
 @import "components/var";
 @import "components/mixin";
-@import "components/_elements";
-
-
-@import "blocks/_header";
-@import "blocks/_footer";
-
-@import "_index";
+@import "components/elements";
+@import "blocks/header";
+@import "blocks/footer";
+@import "index";
 
