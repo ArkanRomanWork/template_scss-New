@@ -1,10 +1,9 @@
-@import "components/reset";
-@import "libs";
-@import "fonts";
-@import "components/var";
-@import "components/mixin";
-@import "components/elements";
-@import "blocks/header";
-@import "blocks/footer";
+@import "settings/reset";
+@import "settings/fonts";
+@import "settings/var";
+@import "settings/mixin";
+@import "components/header";
+@import "components/footer";
+@import "components/txt-block";
 @import "index";
 
