@@ -1,8 +1,16 @@
+@import "constants";
+@import "mixins";
+
 body {
     font-size: $base-font-size;
     font-family: $base-font, sans-serif;
     line-height: $base-line-height;
     color: $text-color;
+
+    // example how to use mixin for responsive layout
+    @include max-screen(md) {
+        background: red;
+    }
 }
 
 .container {
