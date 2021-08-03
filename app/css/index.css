@@ -1,15 +1,4 @@
-@font-face {
-  font-family: "OpenSans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "OpenSans";
-  font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/OpenSans-SemiBold.ttf") format("truetype");
-}
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -36,7 +25,6 @@ dd {
 
 body {
   min-height: 100vh;
-  line-height: 1.3;
 }
 
 ul,
@@ -68,14 +56,39 @@ button {
   cursor: pointer;
 }
 
+@font-face {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/OpenSans-SemiBold.ttf") format("truetype");
+}
+/*-- Абсолютное позиционирование  по центру*/
+/*----------------------------------------*/
+/*стили для плейсхоледра*/
+/*
+  .input-class{
+    @include placeholder{
+      code-here
+    }
+  }
+*/
+/* Breakpoint sizes */
+/* Create the mixin (usually in a separate .scss file) */
 body {
-  font-size: 14px;
-  font-family: OpenSans, sans-serif;
-  color: #404650;
+  font-size: 18px;
+  font-family: "OpenSans", sans-serif;
+  line-height: 1.4;
+  color: #000000;
 }
 
 .container {
-  width: 1240px;
+  width: 1170px;
   margin: 0 auto;
   padding: 0 10px;
 }

@@ -1,11 +1,12 @@
 body {
-    font-size: 14px;
-    font-family: OpenSans, sans-serif;
-    color: #404650;
+    font-size: $base-font-size;
+    font-family: $base-font, sans-serif;
+    line-height: $base-line-height;
+    color: $text-color;
 }
 
 .container {
-    width: 1240px;
+    width: $desktop-width;
     margin: 0 auto;
     padding: 0 10px;
 }
