@@ -1,0 +1,98 @@
+/*-- Абсолютное позиционирование  по центру*/
+@mixin horizontal-absolute {
+  position: absolute;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+@mixin vertical-absolute {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin center-absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+@mixin cancel-absolute {
+  position: absolute;
+  -ms-transform: translate(0%, 0%);
+  -webkit-transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
+  left: auto;
+  right: auto;
+  top: auto;
+  bottom: auto;
+}
+
+/*----------------------------------------*/
+
+/*стили для плейсхоледра*/
+
+/*
+  .input-class{
+    @include placeholder{
+      code-here
+    }
+  }
+*/
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content
+  }
+  &:-moz-placeholder {
+    @content
+  }
+  &::-moz-placeholder {
+    @content
+  }
+  &:-ms-input-placeholder {
+    @content
+  }
+}
+
+/* Breakpoint sizes */
+$screen-xs: 479px;
+$screen-sm: 767px;
+$screen-md: 991px;
+$screen-lg: 1200px;
+$screen-xl: 1600px;
+
+/* Create the mixin (usually in a separate .scss file) */
+@mixin max-screen($media) {
+  @if $media == xs {
+    @media only screen and (max-width: $screen-xs) {
+      @content;
+    }
+  } @else if $media == xsm {
+    @media only screen and (max-width: $screen-xsm) {
+      @content;
+    }
+  } @else if $media == sm {
+    @media only screen and (max-width: $screen-sm) {
+      @content;
+    }
+  } @else if $media == md {
+    @media only screen and (max-width: $screen-md) {
+      @content;
+    }
+  } @else if $media == lg {
+    @media only screen and (max-width: $screen-lg) {
+      @content;
+    }
+  } @else if $media == xl {
+    @media only screen and (max-width: $screen-xl) {
+      @content;
+    }
+  }
+}

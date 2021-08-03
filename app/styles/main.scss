@@ -1,0 +1,12 @@
+body {
+    font-size: $base-font-size;
+    font-family: $base-font, sans-serif;
+    line-height: $base-line-height;
+    color: $text-color;
+}
+
+.container {
+    width: $desktop-width;
+    margin: 0 auto;
+    padding: 0 10px;
+}
